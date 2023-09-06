@@ -11,7 +11,7 @@
   <?php foreach ($words as $word) : ?>
     <tr>
       <td><?=$n+=1;?></td>
-      <td><?= $word->authorId ?></td>
+      <td><?= $word->name ?></td>
       <td><?= $word->first_language ?></td>
       <td><?= $word->second_language ?></td>
     </tr>    
