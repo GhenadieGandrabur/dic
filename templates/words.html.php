@@ -1,9 +1,13 @@
 <?= $totalWords ?>
+<br>
+<?= $user?>
+
 <a href="/word/edit" >Add a word</a>
 <table>
   <tr>
     <th>#</th>
     <th>Autor id</th>
+
     <th>EN</th>
     <th>RUS</th>
   </tr>
@@ -11,7 +15,8 @@
   <?php foreach ($words as $word) : ?>
     <tr>
       <td><?=$n+=1;?></td>
-      <td><?= $word->name ?></td>
+      <td><?= $word->id ?></td>
+   
       <td><?= $word->first_language ?></td>
       <td><?= $word->second_language ?></td>
     </tr>    

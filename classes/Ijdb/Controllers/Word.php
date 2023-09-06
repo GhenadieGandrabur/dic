@@ -23,15 +23,16 @@ class Word {
 		$totalWords = $this->wordsTable->total();
 
 		$author = $this->authentication->getUser();
-    var_dump($author);
-		die;
+		
+		$user = $author->name;
+   
 		return ['template' => 'words.html.php', 
 				'title' => 'Dictionary', 
 				'variables' => [
 						'totalWords' => $totalWords,
 						'words' => $words,
 						'userId' => $author->id ?? null,
-						'name' => $author->name	?? null				
+						'user' => $user				
 					]
 				];
 	}
