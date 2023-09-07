@@ -15,27 +15,43 @@ class Word {
 		$this->authentication = $authentication;
 	}
 
-	public function list() {
-
-	
-		$words = $this->wordsTable->findAll(); 		
-
-		$totalWords = $this->wordsTable->total();
-
+	public function list()
+	{
 		$author = $this->authentication->getUser();
-		
+		$authorId = $author->id ?? null;
+
+		if ($authorId) {
+			// Assuming your wordsTable returns objects
+			$allWords = $this->wordsTable->findAll();
+			$words = [];
+
+			foreach ($allWords as $word) {
+				if ($word->authorId == $authorId) {
+					$words[] = $word;
+				}
+			}
+		} else {
+			// Handle the case where the author is not logged in
+			$words = [];
+		}
+
+		$totalWords = count($words);
 		$user = $author->name;
-   
-		return ['template' => 'words.html.php', 
-				'title' => 'Dictionary', 
-				'variables' => [
-						'totalWords' => $totalWords,
-						'words' => $words,
-						'userId' => $author->id ?? null,
-						'user' => $user				
-					]
-				];
+
+		return [
+			'template' => 'words.html.php',
+			'title' => 'Dictionary',
+			'variables' => [
+				'totalWords' => $totalWords,
+				'words' => $words,
+				'userId' => $authorId,
+				'user' => $user
+			]
+		];
 	}
+
+
+
 
 	public function home() {
 		$title = 'Dictionary';
