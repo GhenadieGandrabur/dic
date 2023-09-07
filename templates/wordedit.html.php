@@ -1,20 +1,27 @@
+ <div class="col-s-4 col-4">
+</div>
+<div class="col-s-4 col-4 " style="margin:30px;">	
+<h2 class="tc p1 ">Add a word</h2>
+<br>
  <?php if (empty($word->id) || $userId == $word->authorId): ?> 
 <form action="" method="post">
 	<input type="hidden" name="word[id]" value="<?=$word->id ?? ''?>">
 
-    <label for="authorId">Author id:</label>
-    <input id="authorId" name="word[first_language]" value="<?=$word->authorId??""?>">
+    
 
     <label for="fl">EN:</label>
-    <input id="fl" name="word[first_language]" value="<?=$word->first_lamguage??""?>">
+    <input type="text" id="fl" name="word[first_language]" value="<?=$word->first_lamguage??""?>">
 
     <label for="sl">RU:</label>
-    <input id="sl" name="word[second_language]" value="<?=$word->second_language??""?>">    
+    <input type="text" id="sl" name="word[second_language]" value="<?=$word->second_language??""?>">    
 
     <input type="submit" name="submit" value="Save">
 </form>
 <?php else: ?>
-
-<p>You may only edit jokes that you posted.</p>
-
- <?php endif; ?> 
+    
+    <p>You may only edit jokes that you posted.</p>
+    
+    <?php endif; ?> 
+</div>
+    <div class="col-s-4 col-4">
+   </div>

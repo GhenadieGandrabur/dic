@@ -13,16 +13,16 @@
     </ul>
   </top>
 
-  <form action="" method="GET">
+  <form action="" method="GET" class="seek">
     <input type="text" name="search" id="search" placeholder="Enter first letters...">
-    <button type="submit" class="bt">Search</button>
+    <input type="submit" value="Search">
   </form>
 
 
   <table>
     <tr>
-      <th>#</th>
-      <th>First</th>
+      <th style="width:10%">#</th>
+      <th style="width:45%">First</th>
       <th>Second</th>
     </tr>
     <?php $n = 0; ?>

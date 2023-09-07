@@ -1,3 +1,8 @@
+<div class="col-s-4 col-4">
+</div>
+<div class="col-s-4 col-4 " style="margin:30px;">	
+<h2 class="tc p1 ">Register</h2>
+<br>
 <?php if (!empty($errors)): ?>
 	<div class="errors">
 		<p>Your account could not be created, please check the following:</p>
@@ -20,3 +25,6 @@
  
     <input type="submit" name="submit" value="Register account">
 </form>
+</div>
+<div class="col-s-4 col-4">
+</div>
