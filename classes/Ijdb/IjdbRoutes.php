@@ -105,7 +105,7 @@ class IjdbRoutes implements \Ninja\Routes {
 				],
 				'login' => true
 			],
-			'word/list' => [
+			'' => [
 				'GET' => [
 					'controller' => $wordController,
 					'action' => 'list'
@@ -174,13 +174,13 @@ class IjdbRoutes implements \Ninja\Routes {
 				'login' => true,
 				'permissions' => \Ijdb\Entity\Author::EDIT_CATEGORIES
 			],
-			'' => [
-				'GET' => [
-					'controller' => $jokeController,
-					'action' => 'home'
-				],
-				'login' => true
-			]
+			// 'word/list' => [
+			// 	'GET' => [
+			// 		'controller' => $jokeController,
+			// 		'action' => 'home'
+			// 	],
+			// 	'login' => true
+			// ]
 		];
 
 		return $routes;

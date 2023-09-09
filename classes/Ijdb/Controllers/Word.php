@@ -53,11 +53,7 @@ class Word {
 
 
 
-	public function home() {
-		$title = 'Dictionary';
 
-		return ['template' => 'home.html.php', 'title' => $title];
-	}
 
 	public function delete() {
 
@@ -72,7 +68,7 @@ class Word {
 
 		$this->wordsTable->delete($_POST['id']);
 
-		header('location: /word/list'); 
+		header('location: /'); 
 	}
 
 	public function saveEdit() {
@@ -82,7 +78,7 @@ class Word {
 		
 		$wordEntity = $author->addJoke($word);	
 
-		header('location: /word/list'); 
+		header('location: /'); 
 	}
 
 	public function edit() {
