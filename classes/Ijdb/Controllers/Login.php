@@ -27,7 +27,7 @@ class Login {
 	}
 
 	public function success() {
-		return ['template' => 'loginsuccess.html.php', 'title' => 'Login Successful'];
+		return ['template' => 'login.html.php', 'title' => 'Login Successful'];
 	}
 
 	public function error() {

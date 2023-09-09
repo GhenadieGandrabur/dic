@@ -72,7 +72,11 @@ tr:hover{background-color: yellow;}
   center; padding: 10px; border-radius: 5px; background-color: #333; color:white; font-size:10px}
 .bt:hover{background-color: lightgreen;color:#111}
 .bgg{background-color: #ccc;}
+.bgb{background-color: blue;}
+.bgy{background-color: yellow;}
+.bgr{background-color: red;}
 .bggr{background-color: lightgreen;}
+.cw{color:white}
 .b{border: 1px solid;}
 .tc{text-align: center;}
 .p1{padding: 10px;}

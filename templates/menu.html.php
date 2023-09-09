@@ -10,6 +10,8 @@
     </ul>
       </top>
 <?php else : ?>
-  <h2 class="p1 tc" class="tc">Your own dictionary.</h2>
+  <div class="col-s-12 col-12">
+  <h2 class="p1 tc bgb cw" class="tc">Your own dictionary.</h2>
+  </div>
 <?php endif; ?>
 </div>

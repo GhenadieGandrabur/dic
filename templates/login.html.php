@@ -1,6 +1,6 @@
 <div class="col-s-4 col-4">
 </div>
-<div class="col-s-4 col-4 " style="margin:30px;">	
+<div class="col-s-4 col-4 " style="padding:10px 100px">	
 <h2 class="tc p1 ">Login</h2>
 <br>
 	<?php if (isset($error)):?>
