@@ -10,7 +10,7 @@
     
 
     <label for="fl">First:</label>
-    <input type="text" id="fl" name="word[first_language]" value="<?=$word->first_lamguage??""?>">
+    <input type="text" id="fl" name="word[first_language]" value="<?=$word->first_language??""?>">
 
     <label for="sl">Second:</label>
     <input type="text" id="sl" name="word[second_language]" value="<?=$word->second_language??""?>">    

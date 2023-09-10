@@ -2,7 +2,7 @@
 	<div class="col-s-4 col-4">
 		</div>
 		<div class="col-s-4 col-4 tc">
-			<img src="img/book.jpg">
+			<img src="/img/book.jpg">
 		</div>
 		<div class="col-s-4 col-4">
 			</div>

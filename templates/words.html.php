@@ -21,9 +21,11 @@
 
   <table>
     <tr>
-      <th style="width:10%">#</th>
-      <th style="width:45%">First</th>
-      <th>Second</th>
+      <th style="width:5%">#</th>
+      <th style="width:40%">First</th>
+      <th style="width:40%">Second</th>
+      <th style="width:5%">Edit</th>
+      <th style="width:10%">Delete</th>
     </tr>
     <?php $n = 0; ?>
     <?php foreach ($words as $word) : ?>
@@ -31,6 +33,13 @@
         <td><?= $n += 1; ?></td>
         <td><?= $word->first_language ?></td>
         <td><?= $word->second_language ?></td>
+        <td><a href="/word/edit?id=<?=$word->id?>">📝</a></td>
+        <td>
+          <form action="/word/delete" method="post">
+        <input type="hidden" name="id" value="<?= $word->id ?>">
+        <input style="padding:2px; background-color:white; margin:auto; text-align:right;"  type="submit" value="❌">
+      </form>
+        </td>
       </tr>
     <?php endforeach; ?>
   </table>
