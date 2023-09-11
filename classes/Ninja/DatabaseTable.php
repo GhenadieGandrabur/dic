@@ -156,4 +156,11 @@ class DatabaseTable {
 
 		return $entity;	
 	}
+
+	public function searchByWord($word, $authorId)
+	{
+		return $this->query("SELECT * FROM word WHERE (first_language LIKE '$word%' OR second_language LIKE '$word%') 
+			AND authorId = $authorId LIMIT 10")->fetchAll(\PDO::FETCH_OBJ);
+	}
+
 }

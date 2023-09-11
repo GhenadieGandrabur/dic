@@ -100,5 +100,27 @@ class Word {
 					]
 				];
 	}
+
+	public function search()
+	{
+		$author = $this->authentication->getUser();
+		$allWords = $this->wordsTable->findAll();
+
+		if (isset($_GET['word'])) {
+			$words = $this->wordsTable->searchByWord($_GET['word'], $author->id);
+		}	
+
+		return [
+			'template' => 'wordsearch.html.php',
+			'title' => 'Search word',
+			'variables' => [
+				'words' => $words ?? [],
+				'word' => $_GET['word']??"",
+				'user' => $author->name ?? "",
+				'totalWords' => count($allWords)
+			]
+		];
+
+	}
 	
 }

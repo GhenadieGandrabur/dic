@@ -39,8 +39,11 @@ class Login {
 	}
 
 	public function logout() {
-		unset($_SESSION);
+	
+		session_destroy();
 		
-		return ['template' => 'loginerror.html.php', 'title' => 'You have been logged out'];
+		header('Location: /');
+		exit;
+	
 	}
 }
