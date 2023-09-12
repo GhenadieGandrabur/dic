@@ -1,6 +1,7 @@
 <div class="col-s-4 col-5">
 </div>
-<div class="col-s-4 col-4 " style=" padding:10px 100px;">	
+<div class="col-s-4 col-4 ">	
+	<div class="sf">
 <h2 class="tc p1 ">Register</h2>
 <br>
 <?php if (!empty($errors)): ?>
@@ -25,6 +26,7 @@
  
     <input type="submit" name="submit" value="Register account">
 </form>
+	</div>
 </div>
 <div class="col-s-4 col-4">
 </div>

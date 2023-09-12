@@ -186,8 +186,14 @@ html {
 
 @media only screen and (max-width: 600px) {
 
-  div.footer,
-  #exchange {
-    display: none;
-  }
+  top ul{margin-bottom: 20px;}
+  top li {
+    display:block;
+    padding: 5px;    
+  } 
+  .seek input[type="text"]{width: 70%;}
+  .welk{width: 100%;}
+  .sf{width: 80%;}
+    .sw {text-align: center;}
+  
 }

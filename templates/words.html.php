@@ -2,6 +2,7 @@
   <div class="col-s-3 col-3 ">
   </div>
   <div class="col-s-6 col-6 ">
+
     <top>
       <ul>
         <li>
@@ -11,11 +12,13 @@
         <li><a class="bt" href="/word/edit">Add a word</a></li>
       </ul>
     </top>
-
+  
+    <div class="sw">
     <form action="/search" method="GET" class="seek">
       <input type="text" name="word" id="search" placeholder="Enter first letters...">
       <input type="submit" value="Search">
     </form>
+    </div>
 
 
     <table>

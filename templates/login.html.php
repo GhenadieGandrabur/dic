@@ -1,6 +1,7 @@
-<div class="col-s-4 col-4">
+<div class="col-s-4 col-4 ">
 </div>
-<div class="col-s-4 col-4 " style="padding:10px 100px">	
+<div class="col-s-4 col-4 b">
+	<div class="sf">	
 <h2 class="tc p1 ">Login</h2>
 <br>
 	<?php if (isset($error)):?>
@@ -15,6 +16,7 @@
 			
 			<input type="submit" name="login" value="Log in">
 		</form>
+	</div>
 </div>
-		<div class="col-s-4 col-4">
+		<div class="col-s-4 col-4 ">
 		</div>

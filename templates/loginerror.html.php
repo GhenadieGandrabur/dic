@@ -8,7 +8,7 @@
 			</div>
 </div>		
 	<div class="col-s-12 col-12">
-	<div class="col-s-4 col-4 ">
+	<div class="col-s-4 col-4 p1 welc">
 		<h5 class="tc bgb p1 cw">Welcome.</h5>
 		<div class="p1">
 		<p>Here you can save words for studying a language.</p>
@@ -17,7 +17,7 @@
 		<p>We wish you success.</p>
 		</div>
 	</div>
-	<div class="col-s-4 col-4 p1">
+	<div class="col-s-4 col-4 p1 welk">
 		<h5 class="tc bgy p1">Bina ati venit.</h5>
 		<div class="p1">
 		<p>Aici puteti pastara cuvintele pentru studierea unei limbi.</p>
@@ -26,7 +26,7 @@
 		<p>Va dorim succese.</p>
 		</div>
 	</div>
-	<div class="col-s-4 col-4 p1 ">
+	<div class="col-s-4 col-4 p1 wrlk">
 		<h5 class="tc bgr p1 cw">Добро пожаловать.</h5>
 		<div class="p1">
 		<p>Здесь вы можете сохранять слова для изучения языка.</p>
