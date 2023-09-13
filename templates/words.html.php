@@ -24,8 +24,8 @@
     <table>
       <tr>
         <th style="width:5%">#</th>
-        <th style="width:40%">First</th>
-        <th style="width:40%">Second</th>
+        <th style="width:40%">Word</th>
+        <th style="width:40%">Translation</th>
         <th style="width:5%">Edit</th>
         <th style="width:10%">Delete</th>
       </tr>

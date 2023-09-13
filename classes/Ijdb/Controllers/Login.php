@@ -31,7 +31,7 @@ class Login {
 	}
 
 	public function error() {
-		return ['template' => 'loginerror.html.php', 'title' => 'You are not logged in'];
+		return ['template' => 'loginerror.html.php', 'title' => 'Languages open door!!!'];
 	}
 
 	public function permissionsError() {

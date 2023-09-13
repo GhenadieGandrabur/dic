@@ -11,7 +11,7 @@
       </top>
 <?php else : ?>
   <div class="col-s-12 col-12">
-  <h2 class="p1 tc bgb cw" class="tc">Your own dictionary.</h2>
+  <h2 class="p1 tc ">My dictionary</h2>
   </div>
 <?php endif; ?>
 </div>

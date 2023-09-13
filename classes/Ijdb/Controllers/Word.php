@@ -22,14 +22,15 @@ class Word {
 
 		if ($authorId) {
 			// Assuming your wordsTable returns objects
-			$allWords = $this->wordsTable->findAll();
-			$words = [];
+			$words = $this->wordsTable->searchByWord("",$authorId);
+			//$allWords = $this->wordsTable->findAll();
+			//$words = [];
 
-			foreach ($allWords as $word) {
-				if ($word->authorId == $authorId) {
-					$words[] = $word;
-				}
-			}
+			// foreach ($allWords as $word) {
+			// 	if ($word->authorId == $authorId) {
+			// 		$words[] = $word;
+			// 	}
+			// }
 		} else {
 			// Handle the case where the author is not logged in
 			$words = [];

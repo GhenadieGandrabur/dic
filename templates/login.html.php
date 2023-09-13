@@ -1,6 +1,6 @@
 <div class="col-s-4 col-4 ">
 </div>
-<div class="col-s-4 col-4 b">
+<div class="col-s-4 col-4 ">
 	<div class="sf">	
 <h2 class="tc p1 ">Login</h2>
 <br>
