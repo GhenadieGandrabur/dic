@@ -1,4 +1,4 @@
-<h1>Authors</h1>
+<h1>Words</h1>
 <?php
 $host = "localhost";
 $dbname = "dicdb";
@@ -41,26 +41,22 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
     }
 } else {
     // User is authenticated, retrieve data from the "author" table
-    $sql = "SELECT * FROM author";
+    $sql = "SELECT * FROM word";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
-    $authors = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $words = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    echo "<table border='1'>";
+    echo "<tr><th>#</th><th>ID</th><th>Name</th><th>Email</th></tr>";
+    $n = 0;
+    foreach ($words as $word) {
+        echo "<tr>";
+        echo "<td>" . ($n += 1). "</td>";
+        echo "<td>" . $word['authorId'] . "</td>";
+        echo "<td>" . $word['first_language'] . "</td>";
+        echo "<td>" . $word['second_language'] . "</td>";
+        echo "</tr>";
+    }
 
-
-  echo "<table border='1'>";
-  echo "<tr><th>#</th><th>ID</th><th>Name</th><th>Email</th></tr>";
-  $n = 0;
-  foreach ($authors as $author) {
-    echo "<tr>";
-    echo "<td>" . ($n+=1) . "</td>";
-    echo "<td>" . $author['id'] . "</td>";
-    echo "<td>" . $author['name'] . "</td>";
-    echo "<td>" . $author['email'] . "</td>";
-    echo "</tr>";
-  }
-
-  echo "</table>";
+    echo "</table>";
 }
-
-?>
