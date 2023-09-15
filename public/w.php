@@ -1,9 +1,9 @@
 <h1>Words</h1>
 <?php
 $host = "localhost";
-$dbname = "dicdb";
-$username = "root";
-$password = "";
+$dbname = "dic_cubit_md";
+$username = "diccubit";
+$password = "Dic1qaz2wsx";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
