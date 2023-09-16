@@ -17,6 +17,12 @@
 			<input type="submit" name="login" value="Log in">
 		</form>
 	</div>
+	<div class="tc">
+		<br>
+		<p >If you got a problem, please write me.</p>
+		<br>
+	    <p><a href="mailto:admin@cubit.md">admin@cubit.md</a></p>
+</div>
 </div>
 		<div class="col-s-4 col-4 ">
 		</div>
