@@ -12,12 +12,12 @@
         <li><a class="bt" href="/word/edit">Add a word</a></li>
       </ul>
     </top>
-  
+
     <div class="sw">
-    <form action="/search" method="GET" class="seek">
-      <input type="text" name="word" id="search" placeholder="Enter first letters...">
-      <input type="submit" value="Search">
-    </form>
+      <form action="/search" method="GET" class="seek">
+        <input type="text" name="word" id="search myInput" placeholder="Enter first letters...">       
+        <input type="submit" value="Search">
+      </form>
     </div>
 
 
@@ -50,3 +50,10 @@
 
   </div>
 </div>
+
+<!-- <script>
+  function clearInput() {
+    var inputElement = document.getElementById('myInput');
+    inputElement.value = '';
+  }
+</script> -->
